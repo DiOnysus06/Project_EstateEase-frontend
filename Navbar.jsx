@@ -35,8 +35,8 @@ function Navbar() {
           </div>
         ) : (
           <>
-            <a href="/">Sign in</a>
-            <a href="/" className="register">
+            <a href="/login">Sign in</a>
+            <a href="/register" className="register">
               Sign up
             </a>
           </>
@@ -50,11 +50,19 @@ function Navbar() {
         </div>
         <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
+          <Link to="/list">
           <a href="/list">List</a>
+          </Link>
           <a href="/">Contact</a>
-          <a href="/">Agents</a>
-          <a href="/">Sign in</a>
-          <a href="/">Sign up</a>
+          <Link to="/profile">
+          <a href="/profile">Profile</a>
+          </Link>
+          <Link to="/login">
+          <a href="/login">Signin</a>
+          </Link>
+          <Link to="/register">
+          <a href="/register">Signup</a>
+          </Link>
         </div>
       </div>
     </nav>
