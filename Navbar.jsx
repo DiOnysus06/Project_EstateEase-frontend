@@ -14,9 +14,10 @@ function Navbar() {
           <span>EstateEase</span>
         </a>
         <a href="/">Home</a>
+        <Link to="/list">
         <a href="/list">List</a>
-        <a href="/">Contact</a>
-        <a href="/">Agents</a>
+        </Link>
+       
       </div>
       <div className="right">
         {user ? (
@@ -45,7 +46,7 @@ function Navbar() {
           <img
             src="/menu.png"
             alt=""
-            onClick={() => setOpen((prev) => !prev)}
+            onClick={() => setOpen((prev) => !prev)}  n
           />
         </div>
         <div className={open ? "menu active" : "menu"}>
@@ -53,7 +54,6 @@ function Navbar() {
           <Link to="/list">
           <a href="/list">List</a>
           </Link>
-          <a href="/">Contact</a>
           <Link to="/profile">
           <a href="/profile">Profile</a>
           </Link>
