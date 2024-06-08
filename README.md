@@ -6,4 +6,5 @@ Sass (short for syntactically awesome style sheets) is a preprocessor scripting 
 
 THIS IS JUST A UI MODEL AS IT IS A WORK OF FRONTEND.
 
-https://estateease.netlify.app/
+Real Estate app : https://estateease.netlify.app/
+
